@@ -6,6 +6,7 @@ Challenge to make 100 simple flutter app in 100 days.
 <ul>
     <li><a href="#animated-fab">Day1 - Animated Circular Floating Action Button</a></li>
     <li><a href="#timer">Day2 - Timer CountDown</a></li>
+    <li><a href="#animated_container">Day3 - AnimatedContainer and Timer CountDown</a></li>
    
 </ul>
 
@@ -22,3 +23,10 @@ Challenge to make 100 simple flutter app in 100 days.
 
 <a href="https://github.com/AmrMagdyElmoogy/100DaysOfFlutter/tree/main/timer">Source code</a>
 
+
+
+## <h2 id="animated_container">Day3 - AnimatedContainer and Timer CountDown</h2>
+
+<img src="https://user-images.githubusercontent.com/47532331/156266511-1b308342-9c30-4133-aada-866a2c9590ea.gif" alt="drawing" width="200"/>
+
+<a href="https://github.com/AmrMagdyElmoogy/100DaysOfFlutter/tree/main/animated_container">Source code</a>
