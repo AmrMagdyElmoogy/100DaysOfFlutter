@@ -36,9 +36,8 @@ Challenge to make 100 simple flutter app in 100 days.
 
 ## <h2 id="day4">Day4 - Fancy OnBoarding Screens</h2>
 
-<img src="https://user-images.githubusercontent.com/47532331/156590926-49a75daa-eecc-4c81-a4a2-eb627fd7d010.gif" alt="drawing" width="200"/>
+<img src="https://user-images.githubusercontent.com/47532331/156593898-99ba98d3-59ff-4051-bbfe-e58743e8d92e.gif" alt="drawing" width="200"/>
 
 <a href="https://github.com/AmrMagdyElmoogy/100DaysOfFlutter/tree/main/fancy_onboarding">Source code</a>
-
 
 
