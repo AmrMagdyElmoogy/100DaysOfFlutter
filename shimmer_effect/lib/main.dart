@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -54,20 +55,62 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: const Text('Shimmer Effect'),
       ),
-      body: Shimmer.fromColors(
-        baseColor: Colors.grey,
-        highlightColor: Colors.grey[200]!,
-        enabled: enabled,
-        child: Column(
-          children: List.generate(
-              characters.length, (index) => Text(characters[index])),
-        ),
-      ),
+      body: !enabled
+          ? Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: List.generate(
+                    characters.length,
+                    (index) => Text(
+                          characters[index],
+                          style: const TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                        )),
+              ),
+            )
+          : Shimmer.fromColors(
+              baseColor: Colors.grey,
+              highlightColor: Colors.grey[200]!,
+              child: Padding(
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  children: [
+                    ListView.separated(
+                        shrinkWrap: true,
+                        scrollDirection: Axis.vertical,
+                        itemBuilder: (context, index) => ourBody(),
+                        separatorBuilder: (context, index) => const SizedBox(
+                              height: 10,
+                            ),
+                        itemCount: 12)
+                  ],
+                ),
+              ),
+            ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Toogle Shimmer Effect',
         child: const Icon(Icons.remove_red_eye_outlined),
       ), // This trailing comma makes auto-formatting nicer for build methods.
+    );
+  }
+
+  Widget ourBody() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Container(
+          height: 40,
+          width: 40,
+          color: Colors.grey,
+        ),
+        const SizedBox(width: 10),
+        Container(
+          width: 220,
+          height: 20,
+          color: Colors.grey,
+        ),
+      ],
     );
   }
 }
