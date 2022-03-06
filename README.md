@@ -8,6 +8,7 @@ Challenge to make 100 simple flutter app in 100 days.
     <li><a href="#timer">Day2 - Timer CountDown</a></li>
     <li><a href="#animated_container">Day3 - AnimatedContainer and Timer CountDown</a></li>
     <li><a href="#day4">Day4 - Fancy OnBoarding Screens</a></li>
+    <li><a href="#day5">Day5 - Shimmer Effect</a></li>
    
 </ul>
 
@@ -40,5 +41,12 @@ Challenge to make 100 simple flutter app in 100 days.
 
 <a href="https://github.com/AmrMagdyElmoogy/100DaysOfFlutter/tree/main/fancy_onboarding">Source code</a>
 
+
+
+## <h2 id="day5">Day5 - Shimmer Effect</h2>
+
+<img src="https://user-images.githubusercontent.com/47532331/156947361-5b9f42d9-22d0-4209-9216-f54475cc750f.gif" alt="drawing" width="200"/>
+
+<a href="https://github.com/AmrMagdyElmoogy/100DaysOfFlutter/tree/main/shimmer_effect">Source code</a>
 
 
